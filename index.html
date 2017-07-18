@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-app="passportApp">
+  <ul ng-controller="PassportListCtrl">
+    <li class="buble" ng-repeat="buble in data">
+      <span>{{buble.date}} , </span>
+      <span>{{buble.time}} : </span>
+      <span>{{buble.user}}</span>
+      <br>
+      <span>{{buble.content}}</span>
+      <br>
+    </li>
+  <br>
+  </ul>
+  <img src="https://drive.google.com/file/d/0B3oYC0p3PI00SFg4RTNXTU9aVE0/view" alt="" />
+
+</body>
+
+</html>
