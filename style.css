@@ -2,6 +2,18 @@
 
 body {
   box-sizing: border;
+  
+}
+
+
+ul {
+    height: 595px;
+    overflow-y: auto;
+}
+
+img {
+    height: 180px;
+    width: 240px;
 }
 
 .buble {
@@ -10,3 +22,29 @@ body {
   background-color: lightgreen;
   list-style-type: none;
 }
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav {
+        background-color: purple;
+    }
+
+         nav a {
+            text-decoration: none;
+            display:  inline-block;
+            color: white;
+            padding: 5px 10px;
+        }
+
+             nav a:hover {
+                background-color: #990099;
+            }
