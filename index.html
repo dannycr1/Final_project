@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="app.js"></script>
@@ -13,8 +14,8 @@
         <h1>What'sHappends!</h1>
         <div>
             <form action="">
-                Start Date: <input type="date" name="startdate" value="{{$scope.bubles.buble[0].date}}" required  min="05-02-16">
-                End Date: <input type="date" name="enddate" value="end date" required  max="07-19-16"><
+                Start Date: <input type="date" name="startdate" value="" required  min="05-02-16">
+                End Date: <input type="date" name="enddate" value="" required  max="07-19-16">
                 <input type="submit" value="Submit">
             </form> 
             <form action="">
@@ -39,6 +40,7 @@
       <span>{{buble.date}} , </span>
       <span>{{buble.time}} : </span>
       <span>{{buble.user}}</span>
+      <span>{{buble.content}}</span>
       <br>
       <span ng-show="buble.isText">{{buble.content}}</span>
       <img ng-show="buble.isImage" ng-src={{bubble.image}}>
@@ -47,7 +49,7 @@
   <br>
   </ul>
 
-  <img src="img/2016-05-07-PHOTO-00004464.jpg" alt="" />
+  <img src="http://127.0.0.1:8887/img/2016-05-07-PHOTO-00004464.jpg" alt="" />
         </div>
 
     <footer>
