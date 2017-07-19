@@ -40,7 +40,8 @@
       <span>{{buble.time}} : </span>
       <span>{{buble.user}}</span>
       <br>
-      <span>{{buble.content}}</span>
+      <span ng-show="buble.isText">{{buble.content}}</span>
+      <img ng-show="buble.isImage" ng-src={{bubble.image}}>
       <br>
     </li>
   <br>
